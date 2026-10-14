@@ -6,7 +6,7 @@ Manage [HoldOn Todo](https://todo.holdon.ltd) from Cursor via MCP: list, create,
 
 1. Install **holdon-todo** from the Cursor Marketplace (or load this repo under `~/.cursor/plugins/local/holdon-todo` for local testing).
 2. Open **Plugins → Configure** and set **HoldOn PAT**.
-3. Create a token: sign in to [notes.holdon.ltd](https://notes.holdon.ltd) → **Extensions & tokens** → **Create Cursor MCP token** (needs `todo:read` / `todo:write`).
+3. Create a token: sign in / register at [todo.holdon.ltd](https://todo.holdon.ltd) → sidebar **Extensions & tokens** → **Create Cursor MCP token** (`todo:read` / `todo:write`).
 
 ## Manual MCP (`mcp.json`)
 

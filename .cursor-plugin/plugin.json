@@ -19,7 +19,7 @@
       "HOLDON_PAT": {
         "type": "string",
         "title": "HoldOn PAT",
-        "description": "Personal access token from HoldOn Notes → Extensions & tokens → Create Cursor MCP token (scopes: todo:read todo:write)."
+        "description": "Personal access token from todo.holdon.ltd → sidebar Extensions & tokens → Create Cursor MCP token (scopes: todo:read todo:write). Register at todo.holdon.ltd if you need an account."
       }
     },
     "required": ["HOLDON_PAT"]
