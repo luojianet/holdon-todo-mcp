@@ -1,0 +1,27 @@
+{
+  "name": "holdon-todo",
+  "version": "0.1.0",
+  "description": "HoldOn Todo — manage your HoldOn todos from Cursor (list, create, complete, update) via a personal access token.",
+  "author": {
+    "name": "luojianet",
+    "email": "support@holdon.ltd"
+  },
+  "homepage": "https://todo.holdon.ltd",
+  "repository": "https://github.com/luojianet/holdon-todo-mcp",
+  "license": "MIT",
+  "keywords": ["todo", "holdon", "productivity", "mcp"],
+  "logo": "assets/logo.svg",
+  "mcpServers": "mcp.json",
+  "skills": "skills/",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "HOLDON_PAT": {
+        "type": "string",
+        "title": "HoldOn PAT",
+        "description": "Personal access token from HoldOn Notes → Extensions & tokens → Create Cursor MCP token (scopes: todo:read todo:write)."
+      }
+    },
+    "required": ["HOLDON_PAT"]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "@holdon/todo-mcp",
+  "version": "0.1.0",
+  "description": "HoldOn Todo MCP server for Cursor — list, create, complete, and update todos via PAT",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "holdon-todo-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "dist",
+    "mcp.json",
+    ".cursor-plugin",
+    "skills",
+    "assets",
+    "README.md",
+    "LICENSE",
+    "PRIVACY.md"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "bundle": "esbuild src/index.js --bundle --platform=node --format=esm --outfile=dist/index.js --banner:js=\"#!/usr/bin/env node\" --packages=bundle",
+    "prepare-dist": "npm run bundle && chmod +x dist/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luojianet/holdon-todo-mcp.git"
+  },
+  "homepage": "https://todo.holdon.ltd",
+  "keywords": [
+    "mcp",
+    "cursor",
+    "todo",
+    "holdon"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

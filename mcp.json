@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "holdon-todo": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/dist/index.js"],
+      "env": {
+        "HOLDON_PAT": "${HOLDON_PAT}"
+      }
+    }
+  }
+}
